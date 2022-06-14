@@ -29,6 +29,7 @@ const Hero = () => {
           objectPosition="bottom center"
           src={HeroImage}
           priority
+          placeholder="blur"
         />
       </ImageContainer>
     </Container>

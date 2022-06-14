@@ -1,4 +1,5 @@
 import Hero from '@components/Hero';
+import UniqueCollection from '@components/UniqueCollection';
 import HeroCategory from '../components/HeroCat';
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Hero />
       <HeroCategory />
+      <UniqueCollection />
     </>
   );
 }

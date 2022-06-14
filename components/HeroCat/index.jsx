@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect } from 'react';
 import ReactPlayer from 'react-player';
-import { Categories } from './images';
+import { attributes, Categories } from './images';
 import {
   Heading,
   ImageBox,
@@ -11,6 +11,21 @@ import {
   Text,
   VideoContainer,
 } from './style';
+
+const Badge = ({ attribute: { title, content, image } }) => {
+  console.log(image);
+  return (
+    <div className="flex items-center">
+      <div className="p-4 md:basis-44">
+        <Image src={image} alt={title} height="100" width="100" />
+      </div>
+      <div>
+        <p className="text-lg font-semibold">{title}</p>
+        <p className="text-sm">{content}</p>
+      </div>
+    </div>
+  );
+};
 
 const HeroCategory = () => {
   const [showVideo, setShowVideo] = React.useState(false);
@@ -40,7 +55,7 @@ const HeroCategory = () => {
           );
         })}
       </ImageGrid>
-      <VideoContainer className="pb-12">
+      <div>
         <Heading>We’re solving the biggest problems in furniture</Heading>
         <div className="bg-gray-brand">
           {showVideo && (
@@ -55,7 +70,12 @@ const HeroCategory = () => {
             />
           )}
         </div>
-      </VideoContainer>
+      </div>
+      <div className="py-4 md:flex bg-emerald-300">
+        {attributes.map((attribute) => (
+          <Badge key={attribute.title} attribute={attribute} />
+        ))}
+      </div>
     </div>
   );
 };

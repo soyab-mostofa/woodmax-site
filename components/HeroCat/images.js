@@ -20,3 +20,24 @@ export const Categories = [
   { image: Storage3, title: 'Wall Mounted Storage' },
   { image: Vanity1, title: 'Vanity' },
 ];
+
+export const attributes = [
+  {
+    title: 'Fast & free shipping',
+    content:
+      'Every single order ships for free. No minimums, no tiers, no fine print whatsoever.',
+    image: '/assets/fast-shipping-icon.webp',
+  },
+  {
+    title: 'Modular, easy-to-move design',
+    content:
+      'Our innovative modular design is driven by the belief that furniture should fit this home, and the next one.',
+    image: '/assets/easy-to-move-icon.webp',
+  },
+  {
+    title: 'Durable, premium materials',
+    content:
+      'We use materials like sustainably-forested wood, strengthened steel hardware, and top-grain Italian leather.',
+    image: '/assets/sustainable-icon.webp',
+  },
+];
