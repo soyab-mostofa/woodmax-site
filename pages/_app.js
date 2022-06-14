@@ -1,7 +1,21 @@
-import '../styles/globals.css'
+import Head from 'next/head';
+import Navbar from '../components/Navbar';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head>
+        <title>Woodmax Decor</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="best furniture for dream space" />
+      </Head>
+      <Navbar />
+      <main>
+        <Component {...pageProps} />
+      </main>
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
