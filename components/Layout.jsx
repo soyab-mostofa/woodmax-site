@@ -1,5 +1,5 @@
 import { AnimatePresence } from 'framer-motion';
-import React, from 'react';
+import React from 'react';
 import Footer from './Footer';
 import SocialMediaBanner from './layout/SocialMediaBanner';
 import Navbar from './Navbar';
