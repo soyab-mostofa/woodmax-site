@@ -60,7 +60,7 @@ const HeroCategory = () => {
         <div className="bg-gray-brand">
           {showVideo && (
             <ReactPlayer
-              className="container relative max-w-5xl mx-auto after:bg-gray-brand/20 after:absolute after:w-full after:h-full after:top-0"
+              className="relative mx-auto  after:bg-gray-brand/20 after:absolute after:w-full after:h-full after:top-0"
               url={'/assets/interior-video.mp4'}
               playing
               muted
